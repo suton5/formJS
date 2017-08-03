@@ -84,6 +84,7 @@ var submitelement = document.createElement('input');
 		// window.alert(texareaelement.value);
 		var dataArr = [inputelement.value, emailelement.value, texareaelement.value];
 		var csv = dataArr.toString();
+		csv += "\r\n";
 		var downloadLink = document.createElement("a");
 		var blob = new Blob(["\ufeff", csv]);
 		var url = URL.createObjectURL(blob);
