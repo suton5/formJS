@@ -88,7 +88,7 @@ var submitelement = document.createElement('input');
 		var blob = new Blob(["\ufeff", csv]);
 		var url = URL.createObjectURL(blob);
 		downloadLink.href = url;
-		downloadLink.download = "Sujay.csv";
+		downloadLink.download = "UserData.csv";
 
 		document.body.appendChild(downloadLink);
 		downloadLink.click();
